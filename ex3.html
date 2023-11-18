@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+h1{
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#game-info {
+    margin-left: 20px;
+}
+
+#game-info p {
+    margin: 0;
+}
+
+#game-status {
+    font-weight: bold;
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+
+    <div id="game-board">
+       
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <div id="game-info">
+        <p id="current-player">Jogador X</p>
+        <p id="game-status">Status do Jogo</p>
+    </div>
+    <div id="game-info">
+        <button id="restart-button">Jogar Novamente</button>
+    </div>
+
+    <script src="ex3.js"></script>
+</body>
+
+</html>
